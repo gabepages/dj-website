@@ -5891,12 +5891,10 @@ section {
   section a {
     text-decoration: none;
     display: inline-block;
+    text-align: center;
     color: rgba(250, 250, 250, 0.95);
     width: 100%;
     height: 340px; }
-    section a:hover {
-      text-decoration: none;
-      color: rgba(242, 191, 55, 0.8); }
     section a::before {
       content: "";
       position: absolute;
@@ -5904,8 +5902,23 @@ section {
       bottom: 0;
       right: 0;
       left: 0;
-      background-color: rgba(100, 100, 100, 0.5);
+      background-color: rgba(100, 100, 100, 0.3);
       background-size: cover; }
+    section a:hover {
+      text-decoration: none;
+      color: rgba(242, 191, 55, 0.8);
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(100, 100, 100, 0.6);
+      background-size: cover; }
+      section a:hover h1 {
+        margin: 20px auto 10px auto; }
+      section a:hover p {
+        display: inline-block; }
   section h1 {
     margin: 150px auto 0 auto;
     text-align: center;
@@ -5914,10 +5927,35 @@ section {
     font-weight: 100;
     position: relative; }
   section p {
-    display: none; }
+    display: none;
+    width: 260px;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(250, 250, 250, 0.9); }
 
 .rental h1 {
   margin: 125px auto 0 auto; }
+
+.rental a:hover {
+  text-decoration: none;
+  color: rgba(242, 191, 55, 0.8);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(100, 100, 100, 0.6);
+  background-size: cover; }
+  .rental a:hover h1 {
+    font-size: 45px;
+    margin: 20px auto 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative; }
+  .rental a:hover p {
+    display: inline-block; }
 
 .images {
   padding: 0 0 125px 0; }
