@@ -5922,7 +5922,7 @@ section {
   section h1 {
     margin: 150px auto 0 auto;
     text-align: center;
-    font-size: 50px;
+    font-size: 42px;
     text-transform: uppercase;
     font-weight: 100;
     position: relative; }
@@ -5933,10 +5933,7 @@ section {
     font-size: 18px;
     color: rgba(250, 250, 250, 0.9); }
 
-.rental h1 {
-  margin: 125px auto 0 auto; }
-
-.rental a:hover {
+.photography a:hover {
   text-decoration: none;
   color: rgba(242, 191, 55, 0.8);
   content: "";
@@ -5945,16 +5942,16 @@ section {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(100, 100, 100, 0.6);
+  background-color: rgba(100, 100, 100, 0.7);
   background-size: cover; }
-  .rental a:hover h1 {
-    font-size: 45px;
+  .photography a:hover h1 {
+    font-size: 42px;
     margin: 20px auto 10px auto;
     text-align: center;
     text-transform: uppercase;
     font-weight: 100;
     position: relative; }
-  .rental a:hover p {
+  .photography a:hover p {
     display: inline-block; }
 
 .images {
@@ -5977,9 +5974,9 @@ footer {
 
   .lights {
     margin-bottom: 20px; } }
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 928px) {
   header {
-    height: 280px;
+    height: 130px;
     padding-top: 0;
     margin-top: 0; }
     header h1 {
@@ -5993,6 +5990,9 @@ footer {
       margin: 0 auto;
       padding: 0;
       float: none; } }
+@media screen and (max-width: 502px) {
+  header {
+    height: 175px; } }
 .about-content {
   margin: 75px 0 0 0;
   height: 575px; }
@@ -6007,7 +6007,7 @@ footer {
 .profile-pic {
   display: inline-block; }
   .profile-pic img {
-    margin: -115px 0 0 0;
+    margin: -120px 0 0 0;
     width: 200px;
     height: 200px;
     border-radius: 100px; }
@@ -6022,5 +6022,26 @@ footer {
   font-size: 20px;
   font-weight: 200;
   color: rgba(250, 250, 250, 0.7); }
+
+@media screen and (max-width: 992px) {
+  .profile-pic {
+    display: block;
+    text-align: center; }
+    .profile-pic img {
+      margin: 0; }
+
+  .social {
+    display: block;
+    text-align: center;
+    padding: 30px 0 0 0; }
+    .social .move {
+      padding-right: 10px; }
+    .social li {
+      display: inline; }
+
+  .about-me {
+    text-align: center; }
+    .about-me h2 {
+      padding: 20px 0 10px 0; } }
 
 /*# sourceMappingURL=main.css.map */
