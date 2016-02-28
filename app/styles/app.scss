@@ -1,12 +1,24 @@
-/* Bootstrap Variables */
-$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 $grid-gutter-width: 20px;
 $container-large-desktop: (970px + $grid-gutter-width);
-/* Import Bootstrap */
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
 
 body {
-  background: url("../images/background1.jpg")center center no-repeat;
+  background: url("../../images/background1.jpg")center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -49,6 +61,11 @@ header {
       display: inline;
       margin-left: 10px;
       a{
+        .active{
+          text-decoration: none;
+          color: rgba(242, 191, 55, 0.6);
+          border:1px solid rgba(242, 191, 55, 0.6);
+        }
         display: inline;
         text-decoration: none;
         color: rgba(200, 200, 200, 0.8);
@@ -398,4 +415,10 @@ input{
   input{
     width: 100%;
   }
+}
+
+.active{
+  text-decoration: none;
+  color: rgba(242, 191, 55, 0.6);
+  border:1px solid rgba(242, 191, 55, 0.6);
 }

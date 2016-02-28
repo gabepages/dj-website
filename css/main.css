@@ -5856,6 +5856,10 @@ header {
         color: rgba(200, 200, 200, 0.8);
         border: 1px solid rgba(200, 200, 200, 0.8);
         padding: 6px; }
+        header ul li a .active {
+          text-decoration: none;
+          color: rgba(242, 191, 55, 0.6);
+          border: 1px solid rgba(242, 191, 55, 0.6); }
         header ul li a:hover {
           text-decoration: none;
           color: rgba(242, 191, 55, 0.6);
@@ -6122,5 +6126,9 @@ input {
 
   input {
     width: 100%; } }
+.active {
+  text-decoration: none;
+  color: rgba(242, 191, 55, 0.6);
+  border: 1px solid rgba(242, 191, 55, 0.6); }
 
 /*# sourceMappingURL=main.css.map */
